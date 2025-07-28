@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#map-page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#map-container {
+    height: 100%;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+/* ˇˇˇˇˇˇ handles container position on screen ˇˇˇˇˇ */
+#search-mapkey-property-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px;
+    left: 64%;
+    z-index: 2;
+    width: 35%;
+    max-height: calc(100% - 30px);
+    background-color: rgb(35 55 75 / 30%);
+    padding: 5px;
+    border-radius: 3px;
+    overflow-y: scroll;
+}
+
+div[class*="--Results"] {
+    min-width: unset !important;
+    width: 98%;
+}
+
+.search-container,
+.property-container,
+.mapkey-container {
+    position: relative;
+    width: 99%;
+    height: 100%;
+    color: white;
+    background-color: rgb(35 55 75);
+    margin: 2.5px;
+    color: #fff;
+    padding: 3px;
+    font-family: monospace;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+
+.map-layers-container {
+    margin: 2.5px; 
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.map-layer-label {
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map-sublayer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3px 0px;
+}
+
+input[type="number"] {
+  min-width: 65%;
+  max-width: 75%;
+  box-sizing: border-box;
+}
+
+input[type="color"] {
+    width: 20px; 
+    height: 20px;
+    padding: 0;
+    margin-right: 2px; 
+}
+
+.sub-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: medium;
+    margin-bottom: 5px;
+}
+
+.detail-color {
+    color: rgb(255, 204, 0);
+}
+
+.property-details-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.property-details-table th {
+    text-align: left;
+    padding-right: 12px;
+    vertical-align: top;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.property-details-table td {
+    padding-bottom: 8px;
+}
